@@ -7,7 +7,7 @@ package-lock.json
 .env.local.development
 
 ##production
-dist
+/dist
 
 #config
 .editorconfig

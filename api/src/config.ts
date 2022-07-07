@@ -7,5 +7,6 @@ export const DB_NAME = env.DB_NAME || 'postgres';
 export const DB_USER = env.DB_USER || 'postgres';
 export const DB_PASSWORD = env.DB_PASSWORD || 'postgres';
 export const PORT = env.PORT || 5000;
+export const API_KEY= env.API_KEY || null;
 // export const DB_PORT = env.DB_PORT || 5432;
 // export const DB_DIALECT = env.DB_DIALECT || 'postgres';

@@ -1,7 +1,7 @@
 import { DataTypes, Sequelize } from "sequelize";
 
-const Videogame = (sql : Sequelize) => {
-  sql.define("Videogame", {
+const Genre = (sql : Sequelize) => {
+  sql.define("Genre", {
     id: {
       type: DataTypes.INTEGER,
       defaultValue: DataTypes.UUIDV4,
@@ -17,24 +17,12 @@ const Videogame = (sql : Sequelize) => {
       type: DataTypes.STRING,
       allowNull: false,
     },
-    description: {
-      type: DataTypes.TEXT,
-      allowNull: true,
-    },
-    released: {
-      type: DataTypes.STRING,
+    gamesCount: {
+      type: DataTypes.INTEGER,
       allowNull: true,
     },
     backgroundImage: {
       type: DataTypes.STRING,
-      allowNull: true,
-    },
-    rating: {
-      type: DataTypes.FLOAT,
-      allowNull: true,
-    },
-    ratingTop: {
-      type: DataTypes.FLOAT,
       allowNull: true,
     },
     createdInDb: {
@@ -47,4 +35,4 @@ const Videogame = (sql : Sequelize) => {
   });
 };
 
-export default Videogame;
+export default Genre;
